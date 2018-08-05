@@ -1482,9 +1482,9 @@
       }
     },
     "@wordpress/hooks": {
-      "version": "1.3.1",
-      "resolved": "https://registry.npmjs.org/@wordpress/hooks/-/hooks-1.3.1.tgz",
-      "integrity": "sha512-8sX7yOnDoZwOxP+URgGbt9JcEuRs/3RmPwNtnYQbdI2r1b3oMV8udWIVGorqa+pESGUU7e/Bipvn4ws/lP2HZw==",
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@wordpress/hooks/-/hooks-1.3.2.tgz",
+      "integrity": "sha512-/SfKDS4yvFSdXWqT9eWB/uHbU9w7/tb1amP0mg/44f0A+g8AzbGFpSkVMGYxtmkdsm00BkQjigfiaQeIiV132w==",
       "requires": {
         "@babel/runtime": "^7.0.0-beta.52"
       }
