@@ -5,7 +5,7 @@
  */
 
 import Dispatcher from 'dispatcher';
-import { flowRight, includes, partial } from 'lodash';
+import { flowRight, includes } from 'lodash';
 import wpLib from 'lib/wp';
 const wpcom = wpLib.undocumented();
 
@@ -66,13 +66,11 @@ const apiFailure = data => {
 
 	return data;
 };
-const setImportLock = ( shouldEnableLock, importerId ) => {
-	const type = shouldEnableLock ? IMPORTS_IMPORT_LOCK : IMPORTS_IMPORT_UNLOCK;
 
-	Dispatcher.handleViewAction( { type, importerId } );
-};
-const lockImport = partial( setImportLock, true );
-const unlockImport = partial( setImportLock, false );
+const lockImport = importerId => Dispatcher.handleViewAction( { IMPORTS_IMPORT_LOCK, importerId } );
+
+const unlockImport = importerId =>
+	Dispatcher.handleViewAction( { IMPORTS_IMPORT_UNLOCK, importerId } );
 
 const asArray = a => [].concat( a );
 
