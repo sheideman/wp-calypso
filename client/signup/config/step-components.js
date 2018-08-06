@@ -18,6 +18,7 @@ import DesignTypeWithStoreComponent from 'signup/steps/design-type-with-store';
 import DesignTypeWithAtomicStoreComponent from 'signup/steps/design-type-with-atomic-store';
 import DomainsStepComponent from 'signup/steps/domains';
 import GetDotBlogPlansStepComponent from 'signup/steps/get-dot-blog-plans';
+import ImportURLStepComponent from 'signup/steps/import-url';
 import PlansStepComponent from 'signup/steps/plans';
 import SiteComponent from 'signup/steps/site';
 import RebrandCitiesWelcomeComponent from 'signup/steps/rebrand-cities-welcome';
@@ -56,6 +57,7 @@ export default {
 	'jetpack-user': UserSignupComponent,
 	'get-dot-blog-plans': GetDotBlogPlansStepComponent,
 	'get-dot-blog-themes': ThemeSelectionComponent,
+	'import-from-url': ImportURLStepComponent,
 	plans: PlansStepComponent,
 	'plans-store-nux': PlansAtomicStoreComponent,
 	'plans-site-selected': PlansStepWithoutFreePlan,
