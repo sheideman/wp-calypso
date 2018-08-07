@@ -139,7 +139,6 @@ function getWebpackConfig( { extensionName = '' } = {}, argv ) {
 			rules: [
 				{
 					test: /\.jsx?$/,
-					exclude: /node_modules[\/\\](?!notifications-panel)/,
 					use: [
 						{
 							loader: 'thread-loader',
