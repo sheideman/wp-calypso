@@ -139,6 +139,7 @@ function getWebpackConfig( { extensionName = '' } = {}, argv ) {
 			rules: [
 				{
 					test: /\.jsx?$/,
+					exclude: /node_modules\//,
 					use: [
 						{
 							loader: 'thread-loader',
